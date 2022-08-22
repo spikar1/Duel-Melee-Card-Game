@@ -21,6 +21,7 @@ HTMLIMAGE = , (attack), stiletto.png, 0.4, 0.4,M
 HTMLIMAGE = , (fire), flamer.png, 0.4, 0.4,M
 HTMLIMAGE = , (defense), leather-vest.png, 0.4, 0.4,M
 HTMLIMAGE = , (square), cube.png, 0.4, 0.4,M
+HTMLIMAGE = , (range), high-shot.png, 0.4, 0.4,M
 
 VISUAL=, 10, 10
 ;HTMLFont Description
@@ -35,15 +36,15 @@ FONT=Arial,14,TB,#000000
 TEXT="1-{(TOP NAME)}",[TOP NAME],{2600/503}%,{8/7}%,{40000/503}%,{68/7}%,LEFT,TOP
 ;Bottom Name
 TEXT="1-{(BOTTOM NAME)}",[BOTTOM NAME],{2600/503}%,{358/7}%,{40000/503}%,{68/7}%,LEFT,TOP
-GRID=,0%,0%,{50000/503}%,{697/7}%,#000000,.1,1,2
+GRID=,0%,0%,{49900/503}%,{696/7}%,#000000,.1,1,2
 ;Top Description
 HTMLTEXT="1-{(TOP DESCRIPTION)}",[TOP DESCRIPTION],{2600/503}%,9%,{45400/503}%,{268/7}%,#FFFFFF,0,BE,100,Description
 ;Bottom Description
 HTMLTEXT="1-{(BOTTOM DESCRIPTION)}",[BOTTOM DESCRIPTION],{2600/503}%,{414/7}%,{44200/503}%,{278/7}%,#FFFFFF,0,BE,100,Description
 ;Icons Top Type
-ICONS="1-{(TOP TYPE)}",[TOP TYPE],{41500/503}%,{264/7}%,{7900/503}%,{79/7}%,1,1,0,N
+ICONS="1-{(TOP TYPE)}",[TOP TYPE],{20000/503}%,{264/7}%,{29400/503}%,{79/7}%,1,1,0,N,RIGHT
 ;Icons Bottom Type
-ICONS="1-{(BOTTOM TYPE)}",[BOTTOM TYPE],{41500/503}%,{614/7}%,{7900/503}%,{79/7}%,1,1,0,N
+ICONS="1-{(BOTTOM TYPE)}",[BOTTOM TYPE],{23100/503}%,{614/7}%,{26300/503}%,{79/7}%,1,1,0,N,RIGHT
 ICONS="1-{(CLASS)}",[CLASS],0%,75%,100%,{157/7}%,1.5,1.5,0,PN,CENTER,CENTER,40
 ENDVISUAL
 
