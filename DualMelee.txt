@@ -1,0 +1,61 @@
+LINKMULTI = Count
+LINK = "1xvUjI82BFLDMNFWndHWZhi4YRQL3QM2vnNdePG828JU"
+
+
+UNIT = CM
+BORDER = RECTANGLE, #000000, 0.2
+MARGINS = 0.5, 0.5, 0.5, 0.5
+CARDSIZE = 6.4, 8.9
+PAGE = 29.7, 42, PORTRAIT
+
+ICON = , A, battle-axe.png
+ICON = , D, shield.png
+ICON = , R, anticlockwise-rotation.png
+ICON = , M, tread.png
+ICON = , S, visored-helm.png
+ICON = , W, wizard-face.png
+
+ICONS = 1, Action, 0, 0, 6, 6, 2, 2, 0, T, CENTER, CENTER
+
+HTMLIMAGE = , (attack), stiletto.png, 0.4, 0.4,M
+HTMLIMAGE = , (fire), flamer.png, 0.4, 0.4,M
+HTMLIMAGE = , (defense), leather-vest.png, 0.4, 0.4,M
+HTMLIMAGE = , (square), cube.png, 0.4, 0.4,M
+
+VISUAL=, 10, 10
+;HTMLFont Description
+HTMLFONT=Description,Arial,10,,#000000
+;Top Rectangle
+RECTANGLE=,0%,0%,100%,{352/7}%,#FFE0E0
+;Bottom Rectangle
+RECTANGLE=,0%,50%,100%,{351/7}%,#E0E0FF
+;Title Fond
+FONT=Arial,14,TB,#000000
+;Top Name
+TEXT="1-{(TOP NAME)}",[TOP NAME],{2600/503}%,{8/7}%,{40000/503}%,{68/7}%,LEFT,TOP
+;Bottom Name
+TEXT="1-{(BOTTOM NAME)}",[BOTTOM NAME],{2600/503}%,{358/7}%,{40000/503}%,{68/7}%,LEFT,TOP
+GRID=,0%,0%,{50000/503}%,{697/7}%,#000000,.1,1,2
+;Top Description
+HTMLTEXT="1-{(TOP DESCRIPTION)}",[TOP DESCRIPTION],{2600/503}%,9%,{45400/503}%,{268/7}%,#FFFFFF,0,BE,100,Description
+;Bottom Description
+HTMLTEXT="1-{(BOTTOM DESCRIPTION)}",[BOTTOM DESCRIPTION],{2600/503}%,{414/7}%,{44200/503}%,{278/7}%,#FFFFFF,0,BE,100,Description
+;Icons Top Type
+ICONS="1-{(TOP TYPE)}",[TOP TYPE],{41500/503}%,{264/7}%,{7900/503}%,{79/7}%,1,1,0,N
+;Icons Bottom Type
+ICONS="1-{(BOTTOM TYPE)}",[BOTTOM TYPE],{41500/503}%,{614/7}%,{7900/503}%,{79/7}%,1,1,0,N
+ICONS="1-{(CLASS)}",[CLASS],0%,75%,100%,{157/7}%,1.5,1.5,0,PN,CENTER,CENTER,40
+ENDVISUAL
+
+IF = [TOP RANGE] > 0
+;Image Range Icon Top
+IMAGE=,"high-shot.png",{41600/467}%,{11/7}%,{4000/467}%,{41/7}%,0,PN
+;Text Range Top
+TEXT="1-{(TOP RANGE)}",[TOP RANGE],{34700/467}%,{2/7}%,{6400/467}%,9%,RIGHT,CENTER
+ENDIF
+IF = [BOTTOM RANGE] > 0
+;Image Range bottom
+IMAGE=,"high-shot.png",{41700/467}%,{362/7}%,{4000/467}%,{41/7}%,0,PN
+;Text Range bottom
+TEXT="1-{(BOTTOM RANGE)}",[BOTTOM RANGE],{33900/467}%,{355/7}%,{6400/467}%,9%,RIGHT,CENTER
+ENDIF
