@@ -15,7 +15,6 @@ ICON = , R, anticlockwise-rotation.png
 ICON = , M, tread.png
 ICON = , S, visored-helm.png
 ICON = , W, wizard-face.png
-ICON = , E, barbute.jpg
 
 ICONS = 1, Action, 0, 0, 6, 6, 2, 2, 0, T, CENTER, CENTER
 
@@ -65,4 +64,5 @@ IMAGE=,"high-shot.png",{41700/467}%,{362/7}%,{4000/467}%,{41/7}%,0,PN
 TEXT="1-{(BOTTOM RANGE)}",[BOTTOM RANGE],{33900/467}%,{355/7}%,{6400/467}%,9%,RIGHT,CENTER
 ENDIF
 
-SAVE=,JOIN("Card_", [TOP NAME], [BOTTOM NAME]),0,0,100%,100%
+
+;SAVE=,JOIN(JOIN("Card_",JOIN([TOP NAME],[BOTTOM NAME])),".png"),0,0,100%,100%
